@@ -1,0 +1,542 @@
+$color_primary: #F1CDB3;
+$color_primary_hover: #FDDCC4;
+$font_serif:Georgia, 'Times New Roman', Times, serif;
+$font_sansserif:Arial, Helvetica, sans-serif;
+
+@mixin title-text-large {
+    font: {
+      family: $font_serif;
+      style: normal;
+      size: 32px;
+      weight: 400;
+    }
+    line-height: 110%;
+    color: $color_primary;
+  }
+  @mixin title-text-small {
+  font:{
+      family: $font_sansserif;
+      style: normal;
+      weight: 400;
+      size: 13px;
+  }
+  color: #ffff;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+@mixin buttons{
+    position:relative;
+    background-color:$color_primary;
+    padding:15px 45px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #000;
+    font: {
+        family: $font_serif;
+        style: normal;
+        size: 17px;
+        weight: 400;
+      }
+      line-height: 130%;
+letter-spacing: 0.06em;
+width: fit-content;
+&:hover{
+    background-color:$color_primary_hover;
+}
+
+
+}
+.Page-content{
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+}
+article.First_page{
+    left:0;
+    right:0;
+    top:0;
+    position: absolute;
+    background-image: url("../../assets/images/start-screen-gradient-background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 908px;
+    z-index: 1;
+}
+article.Second_page{
+    left:0;
+    right:0;
+    top:908px;
+    position: absolute;
+    background:#fff;
+    height: 588px;
+    z-index: 1;
+}
+article.Third_page{
+    left:0;
+    right:0;
+    top:1496px;
+    position: absolute;
+    background:#F6F6F6;
+    height: 877px;
+    z-index: 1;
+    text-align: center;
+}
+article.Fourth_page{
+    left:0;
+    right:0;
+    top:2373px;
+    position: absolute;
+    background: #fff;
+    height: 611px;
+    z-index: 1;
+    text-align: center;
+}
+article.Fifth_page{
+    left:0;
+    right:0;
+    top:2984px;
+    position: absolute;
+    background: #F6F6F6;
+    height: 462px;
+    z-index: 1;
+    text-align: center;
+}
+h2{
+    font: {
+        family: $font_serif;
+        style: normal;
+        size: 44px;
+        weight: 400;
+      }
+      color:#ffff;
+      line-height: 130%;
+}
+h3{
+    font: {
+        family: $font_serif;
+        style: normal;
+        size: 35px;
+        weight: 400;
+      }
+     
+      line-height: 130%;
+      text-align: center;
+}
+header{
+    left:0;
+    right:0;
+    top:0;
+    max-width: 1280px;
+    position:absolute;
+    margin: 60px 40px;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    z-index: 2;
+    
+}
+
+
+.title{ 
+    @include title-text-large;
+    margin:10px 0px;
+    position: relative;
+    width: fit-content;
+    a{
+        text-decoration: none;
+        color:$color_primary;
+    }
+    
+}
+.subtitle{ 
+    @include title-text-small;
+    margin:10px 4px;
+position: relative;
+width: fit-content;
+
+}
+
+ul{
+   
+        a {
+        text-decoration: none;
+        display:inline-block;
+        color:#CDCDCD;
+            
+        &:hover{
+            color:#fff;  
+        }
+    }
+   li{
+    list-style: none;
+    font-size: 15px;
+    margin-right:35px;
+    font-family: Arial, Helvetica, sans-serif;
+       
+    &:nth-child(1){
+        border-bottom: 3px solid $color_primary;
+    }
+   }
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+   
+}
+
+.Button_dark{
+    @include buttons;
+}
+
+.Start-screen-content{
+    display:flex;
+    flex-direction: row; 
+    margin-top:180px;
+
+.Content{
+    margin-top:163px;
+    margin-left:40px;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    
+    max-width:460px;
+    .Heading{
+        max-width:310px;
+    }
+    .Subheading{
+        margin:42px 0;
+        font-family: $font_sansserif;
+        color:#fff;
+    }
+}
+.Start-screen-puppy{
+    position: relative;
+    width:698px;
+    height: 728px;
+    background-image: url("../../assets/images/start-screen-puppy.png");
+}
+}
+
+.About-content{
+    .Heading,.Subheading{
+    color:#000;
+    margin-bottom: 25px;
+    margin-top: 0;
+    }
+    .Content{
+        display:flex;
+        flex-direction: column;
+        position:relative;
+        max-width:430px;
+    }
+    .About-pets{
+        position: relative;
+        width:300px;
+        height: 408px;
+        margin-left:175px;
+        margin-right:120px;
+        background-image: url("../../assets/images/about-pets.png");
+    }
+display:flex;
+flex-direction: row;
+margin:80px 40px 100px;
+}
+.Button_light{
+    @include buttons;
+    border:2px solid #F1CDB3;
+    background-color: #fff;
+    padding:13px 42px;
+    
+}
+
+.Pets-content{
+    max-width:1280px;
+    .Content{
+        position:relative;
+        margin: auto;
+        text-align: center;
+        color:#545454;
+        
+        .Slider{
+            margin: 40px 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            .Card{
+                margin-left:45px;
+                margin-right: 45px;
+                background-color: #fff;
+                height:435px;
+                width: 270px;
+                p{
+                    position: relative;
+                    font-family: $font_sansserif;
+                    font-size: 20px;
+                    line-height: 23px;
+                    margin:30px 0 0 0 ;
+                    
+                }
+             img{
+                 margin: 0;
+             }
+             .Button_light{
+                 top:30px;
+             }
+            }
+            &:before{
+                content:'';
+                background-image: url("../../assets/images/arrow.svg");
+                background-repeat: no-repeat;
+                background-position: center center;
+                border: 2px solid $color_primary;
+                border-radius: 50%;
+                width:50px;
+                height:50px;
+                left: 20px;
+                top:50%;
+                position: absolute;
+                display: inline-block;
+                z-index: 4;
+                margin: 0 15px;  
+            }
+                &:hover::before{
+                    background-color:$color_primary_hover;
+                }
+                &:after{
+                    content:'';
+                    background-image: url("../../assets/images/Arrow-right.svg");
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    border: 2px solid $color_primary;
+                    border-radius: 50%;
+                    width:50px;
+                    height:50px;
+                    right: 20px;
+                    top:50%;
+                    position: absolute;
+                    display: inline-block;
+                    z-index: 4;
+                    margin: 0 15px;  
+                }
+                &:hover::after{
+                        background-color:$color_primary_hover;
+                    }
+ 
+        }
+    }
+}
+.Help-content{
+    position:relative;
+    margin: 80px 40px 100px 40px;
+    color:#545454; 
+    max-width: 1200px; 
+    text-align: center;
+    h3{
+         text-align: center;
+         margin-bottom: 60px;
+         
+    }
+    .List{
+       position: relative;
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       justify-content: center;
+       
+       margin-left:60px;
+       margin-right:60px;
+       div{
+          margin-left:60px;
+          margin-right:60px;
+       }
+   }
+}
+
+
+.Donation{
+    
+    margin: 80px 182px 100px 183px;
+    display: flex;
+    flex-direction: row;
+    max-width: 915px;
+    .Heading,.Subheading{
+        color:#545454;
+        margin:0 0 20px 0;
+    }
+    .Subheading{
+        font-size: 15px;
+        line-height: 110%;
+    }
+    .Content{
+        display:flex;
+        flex-direction: column;
+        position:relative;
+        max-width:380px;
+        .Credit-card-content{
+            position:relative;
+            max-width:349px;
+            background-color: $color_primary;
+            border-radius:9px;
+            font-family: $font_serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 115%;
+            padding: 10px 0;
+            display: inline;
+          
+            p{
+                padding: 0;
+                margin: 0;
+            
+            &:before{
+                content:'';
+                background-image: url("../../assets/images/credit-card.svg");
+                width:30px;
+                height:23px;
+                left: 0;
+                position: absolute;
+                display: inline-block;
+                z-index: 3;
+                margin: 0 15px;
+               
+            }
+        }
+        }
+        .Legal-information{
+           color: #B2B2B2;
+           font-family: $font_sansserif;
+           font-style: italic;
+           font-weight: 400;
+           font-size: 12px;
+           line-height: 18px;
+           text-align: left;
+        }
+    }
+    .Donation-dog{
+        position: relative;
+        width:505px;
+        height: 261px;
+        margin: 11px 30px 10px 0;
+        background-image: url("../../assets/images/donation-dog.png");
+    }
+}
+footer{
+    padding:40px 40px 0px 40px;
+    left:0;
+    right:0;
+    top:3446px;
+    position: absolute;
+    background-image: url("../../assets/images/start-screen-gradient-background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 310px;
+    z-index: 1;
+    .Footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding:0;
+    margin: 0;
+   .Footer-item-1{
+       margin-right: 160px;
+       max-width: 278px;
+       
+   
+    .Heading{
+        font-family: $font_serif;
+        color:#fff;
+        text-align: left;
+        margin: 16px 0 40px 0;
+
+        
+    }
+    .Subheading{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        color:$color_primary;
+        margin-bottom: 40px;
+        
+    }
+    .email{
+        position: relative;
+        margin: 0 0 40px 60px;
+        &:before{
+            content:'';
+            background-image: url("../../assets/images/icon-email.svg");
+            width:40px;
+            height:32px;
+            left: -60px;
+            position: absolute;
+            display: inline-block;
+            z-index: 3;
+            margin: 0;
+        }}
+        .phone{
+            position: relative;
+            margin: 0 0 40px 60px;
+            &:before{
+                content:'';
+                background-image: url("../../assets/images/icon-phone.svg");
+                width:40px;
+                height:32px;
+                left: -60px;
+                position: absolute;
+                display: inline-block;
+                z-index: 3;
+                margin: 0;
+               
+            }}
+}
+.Footer-item-2{
+    margin-right: 160px;
+    max-width: 302px;
+
+ .Heading{
+     font-family: $font_serif;
+     color:#fff;
+     text-align: left;
+     margin: 16px 0 40px 0;
+ }
+ .Subheading{
+     font-family: 'Georgia';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 115%;
+     color:$color_primary;
+ }
+ .addr{
+     position: relative;
+     margin: 0 0 40px 40px;
+    &:before{
+        content:'';
+        background-image: url("../../assets/images/icon-marker.svg");
+        width:22px;
+        height:32px;
+        left: -40px;
+        position: absolute;
+        display: inline-block;
+        z-index: 3;
+        margin:0;
+    }}
+}
+    }
+.Footer-item-image{
+    position: relative;
+        width:300px;
+        height: 310px;
+        background-image: url("../../assets/images/footer-puppy.png");
+}
+}
