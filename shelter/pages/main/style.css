@@ -275,7 +275,7 @@ ul li:nth-child(1) {
 }
 .Pets-content .Content .Slider:before {
   content: "";
-  background-image: url("../../assets/images/arrow.svg");
+  background-image: url("../../assets/images/Arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center center;
   border: 2px solid #F1CDB3;
@@ -435,7 +435,7 @@ footer .Footer .Footer-item-1 .Heading {
   margin: 16px 0 40px 0;
 }
 footer .Footer .Footer-item-1 .Subheading {
-  font-family: "Georgia";
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
