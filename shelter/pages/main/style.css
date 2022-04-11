@@ -275,7 +275,7 @@ ul li:nth-child(1) {
 }
 .Pets-content .Content .Slider:before {
   content: "";
-  background-image: url("../../assets/images/arrow.svg");
+  background-image: url("../../assets/images/Arrow.svg");
   background-repeat: no-repeat;
   background-position: center center;
   border: 2px solid #F1CDB3;
