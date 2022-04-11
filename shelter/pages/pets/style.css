@@ -271,7 +271,7 @@ footer {
   right: 0;
   top: 1462px;
   position: absolute;
-  background-image: url("file:///E:/taniksam/git/RS_school/shelter/assets/images/start-screen-gradient-background.png");
+  background-image: url("../../assets/images/start-screen-gradient-background.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -312,7 +312,7 @@ footer .Footer .Footer-item-1 .email {
 }
 footer .Footer .Footer-item-1 .email:before {
   content: "";
-  background-image: url("file:///E:/taniksam/git/RS_school/shelter/assets/images/icon-email.svg");
+  background-image: url("../../assets/images/icon-email.svg");
   width: 40px;
   height: 32px;
   left: -60px;
@@ -327,7 +327,7 @@ footer .Footer .Footer-item-1 .phone {
 }
 footer .Footer .Footer-item-1 .phone:before {
   content: "";
-  background-image: url("file:///E:/taniksam/git/RS_school/shelter/assets/images/icon-phone.svg");
+  background-image: url("../../assets/images/icon-phone.svg");
   width: 40px;
   height: 32px;
   left: -60px;
@@ -360,7 +360,7 @@ footer .Footer .Footer-item-2 .addr {
 }
 footer .Footer .Footer-item-2 .addr:before {
   content: "";
-  background-image: url("file:///E:/taniksam/git/RS_school/shelter/assets/images/icon-marker.svg");
+  background-image: url("../../assets/images/icon-marker.svg");
   width: 22px;
   height: 32px;
   left: -40px;
@@ -373,7 +373,7 @@ footer .Footer-item-image {
   position: relative;
   width: 300px;
   height: 310px;
-  background-image: url("file:///E:/taniksam/git/RS_school/shelter/assets/images/footer-puppy.png");
+  background-image: url("../../assets/images/footer-puppy.png");
 }
 
 /*# sourceMappingURL=style.css.map */
